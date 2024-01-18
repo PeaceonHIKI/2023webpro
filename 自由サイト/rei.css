@@ -10,16 +10,16 @@ height:280px;
     position: absolute;
     top:400px;
     left:470px;
-    width: 65px;
-    height:23px;
+    width: 90px;
+    height:30px;
 }
 
 .open2{
     position: absolute;
     top:450px;
     left:470px;
-    width: 65px;
-    height:23px;
+    width: 90px;
+    height:30px;
 
 }
 
@@ -50,6 +50,15 @@ height:280px;
     height:600px;
     opacity: 0;
 }
+
+.open3{
+    position: absolute;
+    top:245px;
+    left:465px;
+    width: 65px;
+    height:23px;
+
+}
     .site_setsumei2{
         position: absolute;
         top:140px;
@@ -68,7 +77,32 @@ height:280px;
     }
     .url8{
         position: absolute;
-        top: 350px;
+        top: 360px;
         left: 470px;
         display: flex;
     }
+
+    .url10{
+        position: absolute;
+        top: 220px;
+        left: 470px;
+        display: flex;
+    }
+
+    .rei21{
+        position: absolute;
+        top:-800px;
+        left:300px;
+        width: 900px;
+        height:600px;
+        opacity: 0;
+    }
+
+    .rei20{
+        position: absolute;
+        top:210px;
+        left:535px;
+        width:370px;
+        height:290px;
+        }
+        

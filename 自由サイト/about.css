@@ -25,10 +25,16 @@ left:870px;
     left: 470px;
     display: flex;
 }
-.url8{
+.url81{
     position: absolute;
     top: 485px;
     left: 470px;
+    display: flex;
+}
+.url82{
+    position: absolute;
+    top: 485px;
+    left: 530px;
     display: flex;
 }
 .url9{

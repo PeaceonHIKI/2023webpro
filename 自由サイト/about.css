@@ -1,0 +1,47 @@
+.site_setsumei1{
+position: absolute;
+top:150px;
+left:450px;
+}
+.site_setsumei2{
+    position: absolute;
+    top:350px;
+    left:450px;
+}
+.site_setsumei3{
+    position: absolute;
+    top:435px;
+    left:450px;
+}
+
+.site_setsumei4{
+position: absolute;
+top:280px;
+left:870px;
+}
+.url7{
+    position: absolute;
+    top: 445px;
+    left: 470px;
+    display: flex;
+}
+.url8{
+    position: absolute;
+    top: 485px;
+    left: 470px;
+    display: flex;
+}
+.url9{
+    position: absolute;
+    top: 445px;
+    left: 545px;
+    display: flex;
+}
+
+.button-container {
+    position: absolute;
+    left: 470px;
+    top: 355px;
+    display: flex;
+    gap: 1px;
+}

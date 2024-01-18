@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>住宿税计算器</title>
+
+
+<!-- 京都市 宿泊税計算式 -->
+<script>
+
+    function calculateTax() {
+        
+        var numberOfPeople = parseInt(document.getElementById('numberOfPeople').value);
+        var numberOfNights = parseInt(document.getElementById('numberOfNights').value);
+        var hotelPrice = parseInt(document.getElementById('hotelPrice').value);
+    
+        var taxRate;
+        var totalTax;
+        var totalAmount = hotelPrice;
+
+        if (totalAmount / (numberOfNights * numberOfPeople) < 20000) {
+            taxRate = 200;
+        } else if (totalAmount / (numberOfNights * numberOfPeople) < 50000) {
+            taxRate = 500;
+        } else {
+            taxRate = 1000;
+        }
+
+        totalTax = taxRate * numberOfPeople * numberOfNights;
+
+        document.getElementById('result').innerHTML = "综合住宿税: " + totalTax + "¥";
+        document.getElementById('totalAmount').innerHTML = "总住宿费: " + (totalAmount + totalTax) + "¥";
+        document.getElementById('taxPerPerson').innerHTML = "人均住宿税: " + (totalTax / numberOfPeople) + "¥";
+    }  
+        window.onload = function() {
+        calculateTax();
+        };
+        function changeLanguage(citylang) {
+        var currentPath = window.location.pathname;
+        window.location.href = citylang + '.html';
+    }
+
+    </script>
+
+
+<!-- 税率表style -->
+
+<link href="../style_cr.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+    <h2>住宿税计算器</h2>
+
+    <button onclick="changeLanguage('../計算機jp/東京')">日本語</button>
+    <button onclick="changeLanguage('cn東京')">中國語</button>
+    <button onclick="changeLanguage('../計算機en/en東京')">English</button>
+    <button onclick="changeLanguage('../計算機kr/kr東京')">한국어</button><br>
+
+    <div class="link-container">
+        <a href="../../indexcn.html">Home</a>
+        <a href="cn東京.html">东京都</a>
+        <a href="cn大阪.html">大阪府</a>
+        <a href="cn京都.html">京都市</a>
+        <a href="cn福岡市.html">福冈市</a>
+        <a href="cn福岡県.html"> 福冈县</a>
+        <a href="cn北九州.html">北九州市</a>
+        <a href="cn金沢.html">金泽市</a>
+    </div><br><br>
+
+    <h2>东京都住宿税计算器</h2>
+
+    <label for="numberOfPeople">住宿人数:</label>
+    <input type="number" id="numberOfPeople" value="0"><br>
+    
+    <label for="numberOfNights">总住宿日:</label>
+    <input type="number" id="numberOfNights" value="0"><br>
+    
+    <label for="hotelPrice">总住宿费:</label>
+    <input type="number" id="hotelPrice" value="0"><br>
+    
+    <button onclick="calculateTax()">计算</button><br>
+    
+    <div id="result"></div>
+    <div id="totalAmount"></div>
+    <div id="taxPerPerson"></div>
+
+<!-- 京都市の宿泊税表 -->
+    <div id="explanation">
+    <h4>东京都住宿税表</h4>
+    <table>
+            <tr class="header"></tr>
+            <td>住宿费（1人1晚）</td>
+            <td>税率</td>
+        </tr>
+        <tr>
+            <td>10,000¥以上15,000¥未满</td>
+            <td>100¥</td>
+        </tr>
+        <tr>
+            <td>15,000¥以上</td>
+            <td>200¥</td>
+        </tr>
+    </table>
+    </div>
+
+</body>
+</html>

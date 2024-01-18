@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NE231096</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .responsive-image {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+    </style>
+
+    <script>
+        function redirectToPage(location) {
+          window.location.href = location + '.html';
+        }
+        function url(url) {
+          window.location.href = 'https:' + url;
+        }
+
+        </script> 
+
+</head>
+<body class="responsive-image">
+
+    <img class="background-img" src="../indeximg/bg1.png">
+
+    <img class="title" src="../indeximg/title.png">
+
+    <div class="a">
+        <div onclick="url('//github.com/PeaceonHIKI/2023webpro')">
+        <img class="gogit" src="../indeximg/gogit.png"></div></div>
+
+            <div class="aa">
+            <img class="hikari" src="../indeximg/hikari.png">
+            </div>
+
+        <img class="reset" src="../indeximg/reset.png">
+
+        <div class="a">
+            <div onclick="redirectToPage('../index')">
+            <img class="me" src="../indeximg/me.png"></div>
+        </div>
+        <img class="net" src="img/net.png">
+        <div onclick="redirectToPage('../index')">
+        <img class="exit" src="../indeximg/exit.png">
+        </div>
+
+        <img class="kadai3" src="img/3.png">
+        <img class="htmlpaper" src="img/htmlpaper.png">
+
+        <div onclick="redirectToPage('kadai2')">
+        <img class="name5" src="img/name5.png"></div>
+        <div onclick="redirectToPage('kadai3')">
+        <img class="name6" src="img/name6.png"></div>
+
+        <div onclick="redirectToPage('サイト/kadaisite3')">
+        <img class="namesite" src="img/namesite.png"></div>
+
+        <div onclick="redirectToPage('サイト/htmlsite3')">
+        <img class="gohtml" src="img/gohtml.png"></div>
+
+        <img class="setumei3" src="img/setumei3.png">
+
+        <img class="namehtml" src="img/namehtml.png">
+
+         
+
+<h6 class="jp1">
+    <pre>
+    説明 ( 課題 3 )
+
+    サイトの上段には、カフェの名前が書いてあって、
+    押すると、ホームページへ移動するようになっている。
+    その下には、カフェの写真を貼っておいた。
+
+    サイトの中段には、text-align:center を使って、
+    中央にカフェのキャッチコピーとカフェの説明を書いた。
+    
+    カフェの説明の下にはメニューと写真がある。
+    写真は三枚ずつ並べて、メニューと値段が書いてある。
+    また、メニューはrowspanを使って、三つに分けた。
+
+    下段には、住所と電話番号、開催日程と地図を
+    三つの列に分けて入れるために、floatを使った。
+    </pre>
+    </h6>
+
+    <h4 class="jp2">
+    <pre>
+        課題３で工夫した部分はテーブル作りである。
+        以下はテーブルの基本形式である。<br>
+
+        &lt;table border="1"&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;テーブル&lt;/th&gt;
+                    &lt;th&gt;作成&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;最初のセル&lt;/td&gt;
+                    &lt;td&gt;二番目のセル&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;最初のセル&lt;/td&gt;
+                    &lt;td&gt;二番目のセル&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    </pre>
+</h4>
+
+    <script src="main.js"></script>
+</body>
+</html>

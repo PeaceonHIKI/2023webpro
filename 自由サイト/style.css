@@ -1,0 +1,333 @@
+body {
+    margin: 0;  
+}
+
+.back1{
+    position : absolute;
+    top: 480px;
+    left: 920px;
+}
+
+.background-img {
+    width: 1420px;
+    height: 710px; 
+    position : absolute;
+    z-index: -1;
+  }
+
+  img.title {
+    position : absolute;
+    transform: translateX(-50%);
+    top: 0;
+    left: 750px;
+    width: 600px;
+    height: 90px;
+}
+
+.a img {
+    transition: all 0.3s linear;
+}
+
+.a:hover img {
+    transform: scale(1.1);
+}
+
+.aa img {
+    transition: all 0.5s linear;
+}
+
+.aa:hover img {
+    transform: scale(2.5);
+}
+
+.hikari {
+    position : absolute;
+    top: 570px;
+    left: 65px;
+    width: 100px;
+    height: 80px;
+    opacity: 0;
+}
+
+.reset {
+    position : absolute;
+    top: 570px;
+    left: 65px;
+    width: 112.5px;
+    height: 56.25px;
+    color: black;
+    position: absolute;
+    opacity: 0;
+}
+
+.me {
+    position : absolute;
+    top: 570px;
+    left: 65px;
+    width: 100px;
+    height: 80px;
+    animation: left-animation 1.7s ease-out;
+}
+
+.file1 {
+    position : absolute;
+    top: 127.5px;
+    left: 472.5px;
+    width: 75px;
+    height: 75px;
+    color: black;
+}
+
+.gogit{
+    position : absolute;
+    top: 570px;
+    left: 195px;
+    width: 100px;
+    height: 80px;
+    animation: left-animation 1.7s ease-out;
+  }
+
+.name1 {
+    position : absolute;
+    top: 176.25px;
+    left: 482.5px;
+    width: 75px;
+    height: 37.5px;
+    color: black;
+}
+
+.name2 {
+    position : absolute;
+    top: 273.75px;
+    left: 482.5px;
+    width: 75px;
+    height: 37.5px;
+    color: black;
+}
+
+.file2 {
+    position : absolute;
+    top: 225px;
+    left: 472.5px;
+    width: 75px;
+    height: 75px;
+    color: black;
+}
+
+.net {
+    position: absolute;
+    top: 86.25px;
+    left: 445.75px;
+    width: 555.25px;
+    height: 465px;
+    opacity: 1;
+  }
+  
+  .exit {
+    position: absolute;
+    top: 115px;
+    left: 940.25px;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+
+.kadai21, .pro1 {
+    position : absolute;
+    top: 187.5px;
+    left: 585px;
+    width: 75px;
+    height: 75px;
+    opacity: 0;
+}
+
+.kadai22, .pro2 {
+    position : absolute;
+    top: 187.5px;
+    left: 660px;
+    width: 75px;
+    height: 75px;
+    opacity: 0;
+}
+
+.kadai23 {
+    position : absolute;
+    top: 187.5px;
+    left: 735px;
+    width: 75px;
+    height: 75px;
+    opacity: 0;
+}
+
+@keyframes nameUp {
+    from {
+        top: 187.5px;
+        opacity: 0;
+    }
+    to {
+        top: 150px;
+        opacity: 1;
+    }
+}
+
+@keyframes circleCome {
+    from {
+        right: -22.5px;
+        opacity: 0;
+    }
+    to {
+        right: -7.5px;
+        opacity: 1;
+    }
+}
+
+.snowbg{
+
+    position: absolute;
+    top: 155px;
+    left: 460px;
+    width: 528px;
+    height: 350px;
+    opacity: 1;
+}
+.soup{
+    position : absolute;
+    top: 560px;
+    left: 330px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+.re{
+    position : absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 80px;
+    opacity: 0;
+}
+
+.dorodoro, .dorodoro3{
+    position: absolute;
+    top: -450px;
+    left: -30px;
+    width: 1500px;
+    height: 400px;
+    opacity: 0;  
+}
+.dorodoro2 {
+    position: absolute;
+    top: -450px;
+    left: -30px;
+    width: 1500px;
+    height: 500px;
+    opacity: 0; 
+
+}
+
+.curry{
+    position: absolute;
+    top: 700px;
+    left: 0px;
+    width: 1420px;
+    height: 700px;
+    opacity: 0;  
+}
+
+.cal{
+    position: absolute;
+    top: 180px;
+    left:500px;
+    width: 80px;
+    height: 40px;
+}
+.osusume{
+    position: absolute;
+    top: 180px;
+    left:670px;
+    width: 80px;
+    height: 40px;
+} 
+
+.change{
+    position: absolute;
+    top: 180px;
+    left:840px;
+    width: 80px;
+    height: 40px;
+}
+
+.coin{
+    position: absolute;
+    top: 230px;
+    left:480px;
+    width: 180px;
+    height: 180px;
+    opacity:0;
+}
+
+
+.coin2{
+    position: absolute;
+    top: 250px;
+    left:600px;
+    opacity:0;
+}
+.dentaku{
+    position: absolute;
+    top: 230px;
+    left:480px;
+    width: 180px;
+    height: 180px;
+    opacity:0;
+}
+.dentaku2{
+    position: absolute;
+    top: 250px;
+    left:600px;
+    opacity:0;
+}
+.snowman{
+    position: absolute;
+    top: 230px;
+    left:480px;
+    width: 180px;
+    height: 180px;
+    opacity:0;
+
+}
+.snowman2{
+    position: absolute;
+    top: 250px;
+    left:600px;
+    opacity:0;
+}
+
+.airplaine {
+    position: absolute;
+    top: 250px;
+    left: 450px;
+    width: 180px;
+    height: 180px;
+    opacity: 1;
+}
+.airplaineset{
+    position: absolute;
+    top: 230px;
+    left:530px;
+    opacity:1;
+}
+
+.aboutMe {
+    position: absolute;
+    top: 560px;
+    left: 320px;
+    opacity: 1;
+}
+
+.aboutMeSet {
+    position: absolute;
+    top: 650px;
+    left: 310px;
+    opacity: 1;
+}

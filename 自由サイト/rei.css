@@ -1,0 +1,74 @@
+.rei1{
+position: absolute;
+top:180px;
+left:700px;
+width:280px;
+height:280px;
+}
+
+.open{
+    position: absolute;
+    top:400px;
+    left:470px;
+    width: 65px;
+    height:23px;
+}
+
+.open2{
+    position: absolute;
+    top:450px;
+    left:470px;
+    width: 65px;
+    height:23px;
+
+}
+
+.close{
+    position: absolute;
+    top:0px;
+    left:1250px;
+    width: 130px;
+    height:50px;
+    opacity: 0;
+
+}
+
+.rei3{
+    position: absolute;
+    top:-800px;
+    left:350px;
+    width: 870px;
+    height:600px;
+    opacity: 0;
+}
+
+.rei4{
+    position: absolute;
+    top:-800px;
+    left:300px;
+    width: 900px;
+    height:600px;
+    opacity: 0;
+}
+    .site_setsumei2{
+        position: absolute;
+        top:140px;
+        left:450px;
+    }
+    .site_setsumei3{
+        position: absolute;
+        top:300px;
+        left:450px;
+    }
+    .url7{
+        position: absolute;
+        top: 285px;
+        left: 470px;
+        display: flex;
+    }
+    .url8{
+        position: absolute;
+        top: 350px;
+        left: 470px;
+        display: flex;
+    }

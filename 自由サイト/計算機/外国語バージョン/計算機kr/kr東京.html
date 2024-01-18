@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙박세계산기</title>
+
+
+
+<!-- 東京都 宿泊税計算式 -->
+<script>
+    function calculateTax() {
+        
+        var numberOfPeople = parseInt(document.getElementById('numberOfPeople').value);
+        var numberOfNights = parseInt(document.getElementById('numberOfNights').value);
+        var hotelPrice = parseInt(document.getElementById('hotelPrice').value);
+    
+        var taxRate;
+        var totalTax;
+        var totalAmount = hotelPrice;
+
+        if (totalAmount / (numberOfNights * numberOfPeople) < 10000) {
+            taxRate = 0;
+        } else if (totalAmount / (numberOfNights * numberOfPeople) < 15000) {
+            taxRate = 100;
+        } else {
+            taxRate = 200;
+        }
+
+        totalTax = taxRate * numberOfPeople * numberOfNights;
+
+        document.getElementById('result').innerHTML = "총 숙박세: " + totalTax + "엔";
+        document.getElementById('totalAmount').innerHTML = "총 지불비용: " + (totalAmount + totalTax) + "엔";
+        document.getElementById('taxPerPerson').innerHTML = "1명당 지불해야할 숙박세 : " + (totalTax / numberOfPeople) + "엔";
+    }  
+        window.onload = function() {
+        calculateTax();
+        };
+        function changeLanguage(citylang) {
+        var currentPath = window.location.pathname;
+        window.location.href = citylang + '.html';
+    }
+
+    </script>
+
+
+<!-- 税率表style -->
+
+<link href="../style_cr.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+    <h2>숙박세 계산기</h2>
+
+    <button onclick="changeLanguage('../計算機jp/東京')">日本語</button>
+    <button onclick="changeLanguage('../計算機cn/cn東京')">中國語</button>
+    <button onclick="changeLanguage('../計算機en/en東京')">English</button>
+    <button onclick="changeLanguage('kr東京')">한국어</button><br>
+
+    <div class="link-container">
+        <a href="../../indexkr.html">Home</a>
+        <a href="kr京都.html">도쿄도</a>
+        <a href="kr大阪.html">오사카부</a>
+        <a href="kr京都.html">교토시</a>
+        <a href="kr福岡市.html">후쿠오카시</a>
+        <a href="kr福岡県.html">후쿠오카현</a>
+        <a href="kr北九州.html">키타큐슈시</a>
+        <a href="kr金沢.html">카나자와시</a>
+    </div>
+
+    </div>
+    
+    <h2>도쿄의 숙박세 계산기</h2>
+
+    <label for="numberOfPeople">숙박인원수:</label>
+    <input type="number" id="numberOfPeople" value="0"><br>
+    
+    <label for="numberOfNights">총 숙박일수:</label>
+    <input type="number" id="numberOfNights" value="0"><br>
+    
+    <label for="hotelPrice">총 숙박비용:</label>
+    <input type="number" id="hotelPrice" value="0"><br>
+    
+    <button onclick="calculateTax()">계산하기</button><br>
+    
+    <div id="result"></div>
+    <div id="totalAmount"></div>
+    <div id="taxPerPerson"></div>
+
+<!-- 東京の宿泊税表 -->
+<div id="explanation">
+    <h4>도쿄의 숙박세율표</h4>
+    <table>
+        <tr class="header"></tr>
+        <td>숙박요금(1인 1박)</td>
+        <td>1인 1박당 숙박세</td>
+    </tr>
+        <tr>
+            <td>10,000엔 이상, 15,000엔 미만</td>
+            <td>100엔</td>
+        </tr>
+        <tr>
+            <td>15,000엔 이상</td>
+            <td>200엔</td>
+        </tr>
+    </table>
+    </div>
+
+</body>
+</html>

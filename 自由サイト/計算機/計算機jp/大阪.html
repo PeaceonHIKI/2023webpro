@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宿泊税計算機</title>
+
+    <script src="cal.js"></script>
+
+<link href="../style_cr.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+    <!-- 結果表示 -->
+   <h2>宿泊税計算機</h2>
+
+   <button onclick="changeLanguage('大阪')">日本語</button>
+   <button onclick="changeLanguage('../計算機cn/cn大阪')">中國語</button>
+   <button onclick="changeLanguage('../計算機en/en大阪')">English</button>
+   <button onclick="changeLanguage('../計算機kr/kr大阪')">한국어</button><br>
+
+    <div class="link-container">
+        <a href="../../index.html">Home</a>
+        <a href="東京.html">東京都</a>
+        <a href="大阪.html">大阪府</a>
+        <a href="京都.html">京都市</a>
+        <a href="福岡市.html">福岡市</a>
+        <a href="福岡県.html">福岡県</a>
+        <a href="北九州.html">北九州市</a>
+        <a href="金沢.html">金沢市</a>
+    </div>
+    <h2>大阪府の宿泊税計算機</h2>
+    
+    <label for="numberOfPeople">宿泊者数:</label>
+    <input type="number" id="numberOfPeople" value="0"><br>
+    
+    <label for="numberOfNights">総宿泊日:</label>
+    <input type="number" id="numberOfNights" value="0"><br>
+    
+    <label for="hotelPrice">総宿泊費:</label>
+    <input type="number" id="hotelPrice" value="0"><br><br>
+    
+    <button onclick="calculateTaxOsaka()">計算</button><br>
+    
+    <div id="result"></div>
+    <div id="totalAmount"></div>
+    <div id="taxPerPerson"></div>
+
+</body>
+</html>

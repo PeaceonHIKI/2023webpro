@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NE231096</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="計算機/style_cr.css">
+
+    <style>
+        .responsive-image {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+   }
+    </style>
+
+    <script>
+        function redirectToPage(location) {
+          window.location.href = location + '.html';
+        }
+        </script> 
+
+</head>
+<body class="responsive-image">
+
+    <div class="a">
+        <div onclick="url('//github.com/PeaceonHIKI/2023webpro')">
+        <img class="gogit" src="../indeximg/gogit.png"></div></div>
+
+
+    <img class="background-img" src="../indeximg/bg1.png">
+    <img class="title" src="../indeximg/title.png">
+            <div class="aa">
+            <img class="hikari" src="../indeximg/hikari.png">
+            </div>
+        <img class="reset" src="../indeximg/reset.png">
+        <div class="a">
+            <div onclick="redirectToPage('../index')">
+            <img class="me" src="../indeximg/me.png"></div>
+        </div>
+
+        <img class="net" src="../課題記録/img/net.png">
+        <div onclick="redirectToPage('../index')">
+        <img class="exit" src="../indeximg/exit.png">
+        </div>
+
+        <img class="bo" src="img/bo.png">
+        <img class="bt" src="img/bt.png">
+        <img class="bkyo" src="img/bkyo.png">
+        <img class="bka" src="img/bka.png">
+        <img class="bki" src="img/bki.png">
+        <img class="bf" src="img/bf.png">
+        <img class="b1" src="img/b1.png">
+
+        <button onclick="Tokyo()" class="city-button tokyo">東京都</button>
+        <button onclick="Osaka()" class="city-button osaka">大阪市</button>
+        <button onclick="Kyouto()" class="city-button kyouto">京都市</button>
+        <button onclick="FukuokaS()" class="city-button fukuokashi">福岡市</button>
+        <button onclick="FukuokaK()" class="city-button fukuokaken">福岡県</button>
+        <button onclick="Kita()" class="city-button kita">北九州</button>
+        <button onclick="Kanazawa()" class="city-button kanazawa">金沢市</button>
+
+    
+        <div class="calTokyo">
+         <h2>東京都の宿泊税計算機</h2>
+     
+         <label for="numberOfPeople">宿泊者数:</label>
+         <input type="number" id="numberOfPeople" value="0"><br>
+         
+         <label for="numberOfNights">総宿泊日:</label>
+         <input type="number" id="numberOfNights" value="0"><br>
+         
+         <label for="hotelPrice">総宿泊費:</label>
+         <input type="number" id="hotelPrice" value="0"><br><br>
+         
+         <button onclick="calculateTaxByTokyo()">計算</button><br>
+         
+         <div id="Tresult"></div>
+         <div id="TtotalAmount"></div>
+         <div id="TtaxPerPerson"></div>
+        </div>
+
+        <div class="calOsaka">
+            <h2>大阪市の宿泊税計算機</h2>
+        
+            <label for="OnumberOfPeople">宿泊者数:</label>
+            <input type="number" id="OnumberOfPeople" value="0"><br>
+            
+            <label for="OnumberOfNights">総宿泊日:</label>
+            <input type="number" id="OnumberOfNights" value="0"><br>
+            
+            <label for="OhotelPrice">総宿泊費:</label>
+            <input type="number" id="OhotelPrice" value="0"><br><br>
+            
+            <button onclick="calculateTaxByOsaka()">計算</button><br>
+            
+            <div id="Oresult"></div>
+            <div id="OtotalAmount"></div>
+            <div id="OtaxPerPerson"></div>
+           </div>
+
+           <div class="calKyouto">
+            <h2>京都市の宿泊税計算機</h2>
+        
+            <label for="KnumberOfPeople">宿泊者数:</label>
+            <input type="number" id="KnumberOfPeople" value="0"><br>
+        
+            <label for="KnumberOfNights">総宿泊日:</label>
+            <input type="number" id="KnumberOfNights" value="0"><br>
+        
+            <label for="KhotelPrice">総宿泊費:</label>
+            <input type="number" id="KhotelPrice" value="0"><br><br>
+        
+            <button onclick="calculateTaxByKyouto()">計算</button><br>
+        
+            <div id="Kresult"></div>
+            <div id="KtotalAmount"></div>
+            <div id="KtaxPerPerson"></div>
+        </div>
+
+           <div class="calKita">
+            <h2>北九州市の宿泊税計算機</h2>
+        
+            <label for="KInumberOfPeople">宿泊者数:</label>
+            <input type="number" id="KInumberOfPeople" value="0"><br>
+            
+            <label for="KInumberOfNights">総宿泊日:</label>
+            <input type="number" id="KInumberOfNights" value="0"><br>
+            
+            <label for="KIhotelPrice">総宿泊費:</label>
+            <input type="number" id="KIhotelPrice" value="0"><br><br>
+            
+            <button onclick="calculateTaxByKita()">計算</button><br>
+            
+            <div id="KIresult"></div>
+            <div id="KItotalAmount"></div>
+            <div id="KItaxPerPerson"></div>
+           </div>
+
+           <div class="calFukuokaK">
+            <h2>福岡県の宿泊税計算機</h2>
+        
+            <label for="FKnumberOfPeople">宿泊者数:</label>
+            <input type="number" id="FKnumberOfPeople" value="0"><br>
+        
+            <label for="FKnumberOfNights">総宿泊日:</label>
+            <input type="number" id="FKnumberOfNights" value="0"><br>
+        
+            <label for="FKhotelPrice">総宿泊費:</label>
+            <input type="number" id="FKhotelPrice" value="0"><br><br>
+        
+            <button onclick="calculateTaxByFukuokak()">計算</button><br>
+        
+            <div id="FKresult"></div>
+            <div id="FKtotalAmount"></div>
+            <div id="FKtaxPerPerson"></div>
+        </div>
+
+           <div class="calFukuokaS">
+            <h2>福岡市の宿泊税計算機</h2>
+        
+            <label for="FSnumberOfPeople">宿泊者数:</label>
+            <input type="number" id="FSnumberOfPeople" value="0"><br>
+            
+            <label for="FSnumberOfNights">総宿泊日:</label>
+            <input type="number" id="FSnumberOfNights" value="0"><br>
+            
+            <label for="FShotelPrice">総宿泊費:</label>
+            <input type="number" id="FShotelPrice" value="0"><br><br>
+            
+            <button onclick="calculateTaxByFukuokaS()">計算</button><br>
+            
+            <div id="FSresult"></div>
+            <div id="FStotalAmount"></div>
+            <div id="FStaxPerPerson"></div>
+           </div>
+
+           <div class="calKanazawa">
+            <h2>金沢市の宿泊税計算機</h2>
+        
+            <label for="KAnumberOfPeople">宿泊者数:</label>
+            <input type="number" id="KAnumberOfPeople" value="0"><br>
+            
+            <label for="KAnumberOfNights">総宿泊日:</label>
+            <input type="number" id="KAnumberOfNights" value="0"><br>
+            
+            <label for="KAhotelPrice">総宿泊費:</label>
+            <input type="number" id="KAhotelPrice" value="0"><br><br>
+            
+            <button onclick="calculateTaxByKanazawa()">計算</button><br>
+            
+            <div id="KAresult"></div>
+            <div id="KAtotalAmount"></div>
+            <div id="KAtaxPerPerson"></div>
+           </div>
+
+           <div onclick="redirectToPage('main')">
+            <button class="back1">back</button></div>
+
+    <script src="main.js"></script>
+    <script src="計算機/cal.js"></script>
+    <script src="計算機/changeCal.js"></script>
+
+    <div onclick="redirectToPage('aboutMe')">
+        <div class="a">
+        <div class="aboutMe">
+            <img src="img/aboutMe.png" alt="AboutmeImage" style="width: 90px; height: 90px;">
+        </div>
+    </div></div>
+
+    <div class="aboutMeSet">
+        <img src="img/about.png" alt="AboutImage" style="width: 120px; height: 25px;">
+    </div>
+    
+</body>
+</html> 

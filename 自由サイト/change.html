@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NE231096</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="currency/currency.js"></script>
+
+<link rel="stylesheet" href="currency/currency.css">
+
+    <style>
+        .responsive-image {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+    </style>
+
+    <script>
+        function redirectToPage(location) {
+          window.location.href = location + '.html';
+        }
+        </script> 
+
+</head>
+<body class="responsive-image">
+
+    <div class="a">
+      <div onclick="url('//github.com/PeaceonHIKI/2023webpro')">
+        <img class="gogit" src="../indeximg/gogit.png"></div></div>
+
+        
+    <img class="background-img" src="../indeximg/bg1.png">
+    <img class="title" src="../indeximg/title.png">
+            <div class="aa">
+            <img class="hikari" src="../indeximg/hikari.png">
+            </div>
+        <img class="reset" src="../indeximg/reset.png">
+        <div class="a">
+            <div onclick="redirectToPage('../index')">
+            <img class="me" src="../indeximg/me.png"></div>
+        </div>
+
+        <img class="net" src="../課題記録/img/net.png">
+        <div onclick="redirectToPage('../index')">
+        <img class="exit" src="../indeximg/exit.png">
+        </div>
+
+<div class="currency">
+        <table class="currency-table">
+            <tr>
+              <td>
+               <!-- 無 -->
+              <td>
+                <!-- 無 -->
+              </td>
+              <td>
+                <div class="currency-box">
+                      <button class="dropbtn" id="to-button">USD ＄</button>
+                      <ul class="dropdown-content" id="to-currency-list">
+                        <li id="USD">USD</li>
+                      </ul>
+              
+                    <div class="input-box">
+                      <input type="text" class="amount-box" id="toAmountUSD" onkeyup="convert('USD')" placeholder="結果" />
+                    </div>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="currency-box">
+                      <button class="dropbtn" id="from-button">JPN 円</button>
+                      <ul class="dropdown-content" id="from-currency-list">
+                        <li id="JPY">JPY</li>
+                      </ul>
+              
+                    <div class="input-box">
+                      <input type="text" class="amount-box" id="fromAmount" onkeyup="convert('from')" placeholder="金額入力" />
+                    </div>
+                  </div>
+                </td>
+              </td>
+              <td>
+                <!-- ＝ -->
+                <h6><pre>   =   </pre> </h6>
+              </td>
+              <td>
+                <div class="currency-box">
+                    <button class="dropbtn" id="to-button">CNY ￥</button>
+                    <ul class="dropdown-content" id="to-currency-list">
+                      <li id="CNY">CNY</li>
+                    </ul>
+            
+                  <div class="input-box">
+                    <input type="text" class="amount-box" id="toAmountCNY" onkeyup="convert('CNY')" placeholder="結果" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <!-- Empty Cell -->
+              </td>
+              <td>
+                <!-- Empty Cell -->
+              </td>
+              <td>
+                <div class="currency-box">
+                    <button class="dropbtn" id="to-button">KRW ₩</button>
+                    <ul class="dropdown-content" id="to-currency-list">
+                      <li id="KRW">KRW</li>
+                    </ul>
+            
+                  <div class="input-box">
+                    <input type="text" class="amount-box" id="toAmountKRW" onkeyup="convert('KRW')" placeholder="結果" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="currencyRate">
+            <table class="currency-table2">
+      <tr>
+            <td>
+                <h6><pre> USD </pre> </h6>
+        </td>
+        <td>
+            <h6><pre> KRW </pre></h6>
+        </td>
+        <td>
+            <h6><pre> CNY </pre> </h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h6><pre> 0.0068$ </pre> </h6>
+    </td>
+    <td>
+        <h6><pre> 9.08₩ </pre></h6>
+    </td>
+    <td>
+        <h6><pre> 0.048￥ </pre></h6>
+    </td>
+  </tr>
+    </div>
+
+    <div class="setsumei2">
+        <h6><pre>
+為替レート基準: 2023.01.18_18:21
+小数点2桁四捨五入の金額
+        </pre></h6>
+    </div>
+    <div onclick="redirectToPage('main')">
+    <button class="back2">back</button></div>
+
+</body>
+</html>

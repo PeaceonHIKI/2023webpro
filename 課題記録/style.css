@@ -1,0 +1,264 @@
+body {
+    margin: 0;  
+}
+
+.background-img {
+  width: 1420px;
+  height: 710px; 
+  position : absolute;
+  z-index: -1;
+}
+
+  img.title {
+    position : absolute;
+    transform: translateX(-50%);
+    top: 0;
+    left: 750px;
+    width: 600px;
+    height: 90px;
+}
+
+.gogit{
+  position : absolute;
+  top: 570px;
+  left: 195px;
+  width: 100px;
+  height: 80px;
+  animation: left-animation 1.7s ease-out;
+}
+
+.a img {
+  transition: all 0.3s linear;
+}
+
+.a:hover img {
+  transform: scale(1.3);
+}
+
+.aa img {
+  transition: all 0.5s linear;
+}
+
+.aa:hover img {
+  transform: scale(3.5);
+}
+
+.hikari {
+  position : absolute;
+  top: 570px;
+  left: 65px;
+  width: 100px;
+  height: 80px;
+  opacity: 0;
+}
+
+.reset {
+  position : absolute;
+  top: 570px;
+  left: 65px;
+  width: 112.5px;
+  height: 56.25px;
+  color: black;
+  position: absolute;
+  opacity: 0;
+}
+
+.me {
+  position : absolute;
+  top: 570px;
+  left: 65px;
+  width: 100px;
+  height: 80px;
+  animation: left-animation 1.7s ease-out;
+}
+
+.net {
+  position: absolute;
+  top: 86.25px;
+  left: 445.75px;
+  width: 555.25px;
+  height: 465px;
+  opacity: 1;
+}
+
+.exit {
+  position: absolute;
+  top: 115px;
+  left: 940.25px;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+}
+
+@keyframes nameup {
+  from {
+      top: 187.5px;
+      opacity: 0;
+  }
+  to {
+      top: 150px;
+      opacity: 1;
+  }
+}
+
+.kadai3 {
+  position: absolute;
+  top: 172.25px;
+  left: 470px;
+  width: 212.5px;
+  height: 280px;
+  opacity: 1;
+}
+.kadai61 {
+  position: absolute;
+  top: 172.25px;
+  left: 470px;
+  width: 212.5px;
+  height: 280px;
+  opacity: 1;
+}
+.kadai62 {
+  position: absolute;
+  top: 172.25px;
+  left: 470px;
+  width: 212.5px;
+  height: 280px;
+  opacity: 0;
+}
+.kadai63 {
+  position: absolute;
+  top: 172.25px;
+  left: 470px;
+  width: 212.5px;
+  height: 280px;
+  opacity: 0;
+}
+
+.kadai51 {
+  position: absolute;
+  top: 172.25px;
+  left: 470px;
+  width: 212.5px;
+  height: 280px;
+  opacity: 1;
+}
+
+.kadai52 {
+  position: absolute;
+  top: 172.25px;
+  left: 470px;
+  width: 212.5px;
+  height: 280px;
+  opacity: 0;
+}
+
+
+.name5 {
+  position: absolute;
+  top: 470px;
+  left: 690px;
+  width: 60px;
+  height: 30px;
+}
+
+.name6 {
+  position: absolute;
+  top: 470px;
+  left: 760px;
+  width: 60px;
+  height: 30px;
+}
+
+.namesite {
+  position: absolute;
+  top: 470px;
+  left: 900px;
+  width: 60px;
+  height: 30px;
+}
+
+.namehtml {
+  position: absolute;
+  top: 420px;
+  left: 900px;
+  width: 60px;
+  height: 30px;
+}
+.gohtml {
+  position: absolute;
+  top: 470px;
+  left: 830px;
+  width: 60px;
+  height: 30px;
+}
+
+.page61 {
+  position: absolute;
+  top: 470px;
+  left: 470px;
+  width: 60px;
+  height: 30px;
+}
+.page62 {
+  position: absolute;
+  top: 470px;
+  left: 540px;
+  width: 60px;
+  height: 30px;
+}
+
+.page63 {
+  position: absolute;
+  top: 470px;
+  left: 610px;
+  width: 60px;
+  height: 30px;
+}
+
+.page51 {
+  position: absolute;
+  top: 470px;
+  left: 470px;
+  width: 60px;
+  height: 30px;
+}
+
+.page52 {
+  position: absolute;
+  top: 470px;
+  left: 540px;
+  width: 60px;
+  height: 30px;
+}
+
+
+
+.setumei3 {
+  position: absolute;
+  top: 172.25px;
+  left: 685px;
+  width: 300px;
+  height: 290px;
+}
+
+.jp1{
+  position: absolute;
+  top: 172.25px;
+  left: 705px;
+}
+
+
+.htmlpaper {
+  position: absolute;
+  top: 92.5px;
+  right: -60px;
+  width: 487.5px;
+  height: 600px;
+  opacity: 0;
+}
+.jp2{
+  position: absolute;
+  right:50px;
+  top: 140px;
+  opacity: 0;
+}

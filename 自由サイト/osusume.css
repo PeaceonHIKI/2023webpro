@@ -1,0 +1,125 @@
+.set1{
+    opacity: 1;
+    top: 150px;
+    left: 480px;
+    position: absolute; 
+}
+
+.set2 {
+    opacity: 1;
+    top: 280px;
+    left: 600px;
+    position: absolute; 
+}
+
+.zoo1{
+    position: absolute;
+    top: 200px;
+    left: 850px;
+    width: 100px;
+    height: 100px; 
+    opacity:1;
+}
+
+.zoo2{
+    position: absolute;
+    top: 50px;
+    left: 1500px;
+    width: 200px;
+    height: 200px; 
+    opacity:1;
+    animation: right2 2.5s ease-out forwards;
+}
+@keyframes right2 {
+    from {
+        left: 1500px;
+    }
+    to {
+        left: 1120px;
+    }
+}
+
+.zoo3{
+    position: absolute;
+    top: 260px;
+    left: 1550px;
+    width: 200px;
+    height: 200px; 
+    opacity:1;
+    animation: right3 2.5s ease-out forwards;
+}
+@keyframes right3 {
+    from {
+        left: 1550px;
+    }
+    to {
+        left: 1170px;
+    }
+}
+
+
+.zoo4{
+    position: absolute;
+    top: 470px;
+    left: 1500px;
+    width: 200px;
+    height: 200px; 
+    opacity:1;
+    animation: right4 2.5s ease-out forwards;
+}
+@keyframes right4 {
+    from {
+       left: 1500px;
+    }
+    to {
+        left: 1120px;
+    }
+}
+
+
+
+.food1{
+    position: absolute;
+    top: 330px;
+    left: 480px;
+    width: 100px;
+    height: 100px; 
+    opacity:1;
+}
+
+.food2{
+    position: absolute;
+    top: 100px;
+    left: -250px;
+    width: 200px;
+    height: 200px; 
+    opacity:1;
+    animation: left2 2.5s ease-out forwards;
+}
+@keyframes left2 {
+    from {
+        left: -250px;
+    }
+    to {
+        left: 170px;
+    }
+}
+
+.food3{
+    position: absolute;
+    top: 310px;
+    left: -300px;
+    width: 200px;
+    height: 200px; 
+    opacity:1;
+    animation: left3 2.5s ease-out forwards;
+}
+
+@keyframes left3 {
+    from {
+        left: -300px;
+    }
+    to {
+        left: 120px;
+    }
+}
